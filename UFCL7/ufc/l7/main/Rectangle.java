@@ -41,7 +41,7 @@ public class Rectangle extends Figure{
 	
 	@Override
 	public String toString() {
-		return "Width: " + width + " | Height: " + height + "| Perimeter: " + getPerimeter() + "| Area: " + getArea();
+		return "Rectangle - Width: " + width + " | Height: " + height + "| Perimeter: " + getPerimeter() + "| Area: " + getArea();
 	}
 }
 
