@@ -36,7 +36,7 @@ public class Triangle extends Figure {
 	
 	@Override
 	public String toString() {
-		return "A: " + a + " | B: " + b + " | C: " + c + "| Perimeter: " + getPerimeter() + "| Area: " + getArea();
+		return "Triangle - A: " + a + " | B: " + b + " | C: " + c + "| Perimeter: " + getPerimeter() + "| Area: " + getArea();
 	}
 	
 	@Override
