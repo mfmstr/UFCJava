@@ -20,8 +20,8 @@ public class Main {
 		Figure tr3 = new Triangle(5, 0, 13, -1); // გამოაქვს: Invalid Figure, რადგან სიმაღლე ან რომელიმე გვერდი ნოლია ან უარყოფითი;
 		printHelloIfValid(tr3);
 		
-		System.out.println(rec); // გამოვასწორე toString()-მეთოდიც, გამოაქვს: Width: 10.0 | Height: 15.0| Perimeter: 50.0| Area: 150.0
-		System.out.println(tr); // გამოაქვს: A: 10.0 | B: 11.0 | C: 12.0| Perimeter: 33.0| Area: 35.0
+		System.out.println(rec); // გამოვასწორე toString()-მეთოდიც, გამოაქვს: Rectangle - Width: 10.0 | Height: 15.0| Perimeter: 50.0| Area: 150.0
+		System.out.println(tr); // გამოაქვს: Triangle - A: 10.0 | B: 11.0 | C: 12.0| Perimeter: 33.0| Area: 35.0
 
 	}
 	
