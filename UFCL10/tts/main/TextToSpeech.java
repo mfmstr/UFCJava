@@ -11,7 +11,7 @@ public class TextToSpeech {
 		
 		txt = "Hello World";
 		
-		Voice voice;//Creating object of Voice class
+		Voice voice;
         voice = VoiceManager.getInstance().getVoice("kevin");
         if (voice != null) {
             voice.allocate();
