@@ -20,13 +20,13 @@ public class TextToSpeech {
             voice.setVolume(3);
 
             if(txt.substring(0, 3) == "ten"){  // tu sitkvas win mivuwert ten(keyword)-s voices gamoidzaxebs 10jer;
-                txt = txt.substring(3, txt.length);
+                txt = txt.substring(3, txt.length());
                 for(int i = 0; i < 10; i++){
                     voice.speak(txt);
                 }
             }elseif(txt == "sheamokle"){
                 while(txt != ""){
-                    txt = txt.substring(0, s.length() - 1); // kovel sitkvas moaklebs bolo asos sanam ar gaxdeba carieli;
+                    txt = txt.substring(0, txt.length() - 1); // kovel sitkvas moaklebs bolo asos sanam ar gaxdeba carieli;
                 }
             }else{
             
