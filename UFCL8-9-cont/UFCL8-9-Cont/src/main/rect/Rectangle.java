@@ -52,11 +52,8 @@ public class Rectangle extends Figure implements Comparable {
 	
 	@Override
 	public int hashCode() {
-		// ჰეშკოდში ორივე პარამეტრი(სიგრძე, სიგანე) გადამყავს სტრინგში და ვაქცევ ერთ მთლიან დიდ რიცხვად, რომელიც ინტეჯერში შეიძლება არც ჩაეტიოს. ვიღებ უნიკალურ რიცხვს, რომელიც წერია სტრინგში და ვაბრუნებ ამ სტრინგის ჰეშკოდს.
-		String a = ((Double) width).toString();
-		String b = ((Double) height).toString();
-		String c = a + b;
-		return c.hashCode();
+		// ვაბრუნებ უნიკალურ ჰაშკოდს ყველა განსხვავებული ელემენტისთვის.
+		return Objects.hash(width, height);
 	}
 	
 	@Override
