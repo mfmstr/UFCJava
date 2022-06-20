@@ -15,9 +15,13 @@ public class Main {
 				Figure rec2 = new Rectangle(-3, 20);
 				rec2.validate("Validation Finished Unsuccessfully"); // Figure კლასში გადავტვირთე validate მეთოდი, შემდეგ გადმოვიტანე რექთსა და Tri-ში, სტრიქონიანი validate მეთოდი ბეჭდავს შესაბამის შეტყობინებას, ამ შემთხვევაში Validation Finished Unsuccessfully-ს. 
 				
-				Figure rec3 = new Rectangle(3, 20); //;
-				rec3.validate();
 				
+				try{
+				Figure rec3 = new Rectangle(-3, 20); 
+				rec3.validate();
+				}finally{ // ზედა კოდის ალტერნატიული ვარიანტი Try-Final-ის გამოყენებით.
+					System.out.println("Validation Finished Unsuccessfully);  	
+				}
 				
 				Figure rec4 = new Rectangle(4, 20);
 				rec4.validate();
