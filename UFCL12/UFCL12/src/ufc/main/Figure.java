@@ -6,6 +6,8 @@ public abstract class Figure {
 		
 	}
 	
+	public abstract void validate(String string) throws ValidateException;
+	
 	public abstract void validate() throws ValidateException;
 		
 	public double getPerimeter() {
