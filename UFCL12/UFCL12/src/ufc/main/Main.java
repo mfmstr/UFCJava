@@ -19,7 +19,7 @@ public class Main {
 				try{
 				Figure rec3 = new Rectangle(-3, 20); 
 				rec3.validate();
-				}finally{ // ზედა კოდის ალტერნატიული ვარიანტი Try-Final-ის გამოყენებით.
+				}finally{ // ზედა კოდის ალტერნატიული ვარიანტი Try-Final-ის გამოყენებით. ამ შემთხვევაში გამოყენებულია უპარამეტრო validate();
 					System.out.println("Validation Finished Unsuccessfully);  	
 				}
 				
