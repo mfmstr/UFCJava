@@ -1,7 +1,7 @@
 package ufc.main;
 
 public class Main {
-		public static void main(String[] args) throws RectangleValidateException, TriagleValidateException {
+		public static void main(String[] args) {
 			
 			
 			
@@ -13,9 +13,9 @@ public class Main {
 					System.out.println("martkudxedis orive aucileblad meti unda ikos 0-ze!!!");
 				}
 				Figure rec2 = new Rectangle(-3, 20);
-				rec2.validate();
+				rec2.validate("Validation Finished Unsuccessfully"); // Figure კლასში გადავტვირთე validate მეთოდი, შემდეგ გადმოვიტანე რექთსა და Tri-ში, სტრიქონიანი validate მეთოდი ბეჭდავს შესაბამის შეტყობინებას, ამ შემთხვევაში Validation Finished Unsuccessfully-ს. 
 				
-				Figure rec3 = new Rectangle(-3, 20, "on"); //კონსტრუქტორში მესამე პარამეტრის გამოყენებით კონკრეტულ ფიგურას გამოვატანინებ Validation Finished Unsuccessfully;
+				Figure rec3 = new Rectangle(3, 20); //;
 				rec3.validate();
 				
 				
@@ -69,7 +69,7 @@ public class Main {
 			
 			
 			try { // ამოწმებს ფართობის ლიმიტს;
-				Rectangle x = new Rectangle(10000, 20);
+				Rectangle x = new Rectangle(10, 20);
 				x.checkArea();
 			}catch(AreaTooLargeException e) {
 				System.out.println("Martkutxedis fartobi ar unda agematebodes 10 000 - s");
