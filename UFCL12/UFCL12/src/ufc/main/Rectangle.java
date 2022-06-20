@@ -7,23 +7,12 @@ public class Rectangle extends Figure{
 	
 	public static int counter = 0;
 	
-	public String validError = "";
-	
 	public Rectangle(double width, double height) {
 		this.width = width;
 		this.height = height;
 		
 		counter++;
 	}
-	
-	public Rectangle(double width, double height, String msg) {
-		this.width = width;
-		this.height = height;
-		this.validError += msg;
-		
-		counter++;
-	}
-
 	
 	public double getPerimeter() {
 		return (width + height) * 2;
@@ -57,15 +46,21 @@ public class Rectangle extends Figure{
 	@Override
 	public void validate() throws RectangleValidateException {
 		if(width <= 0 || height <= 0) {
-			if(validError == "on") {
-				System.out.println("Validation Finished Unsuccessfully");
-			}
 			throw new RectangleValidateException("martkudxedis orive aucileblad meti unda ikos 0-ze!!!");
 		}else {
 			System.out.println("martkutxedi warmatebit sheikmna");
 		}
 	}
 	
+	@Override
+	public void validate(String msg) throws RectangleValidateException {
+		if(width <= 0 || height <= 0) {
+			System.out.println(msg);
+			throw new RectangleValidateException("martkudxedis orive aucileblad meti unda ikos 0-ze!!!");
+		}else {
+			System.out.println("martkutxedi warmatebit sheikmna");
+		}
+	}
 	
 	
 }
