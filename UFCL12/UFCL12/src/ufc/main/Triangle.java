@@ -43,6 +43,16 @@ public class Triangle extends Figure {
 			System.out.println("samkutxedi warmatebit sheikmna");
 		}
 	}
+
+	@Override
+	public void validate(String msg) throws TriagleValidateException {
+		if(a + b <= c || a + c <= b || b + c <= a) {
+			System.out.println(msg);
+			throw new TriagleValidateException("samkutxedis nebismieri ori gverdis jami aucileblad meti unda ikos mesameze!!!");
+		}else {
+			System.out.println("samkutxedi warmatebit sheikmna");
+		}
+	}
 	
 }
 
