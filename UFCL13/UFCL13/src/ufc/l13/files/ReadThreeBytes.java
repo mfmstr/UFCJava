@@ -14,14 +14,24 @@ public class ReadThreeBytes {
 			
 			for(int i = 0; i < hello.length; i++) {
 				reversed.write(hello[i]);
-			}
+			} // ვახდენ ჩაწერას
 			
-			inp.read(hello, 0, 2);
+			inp.read(hello, 0, 2); // შემდგომ ისევ ვკითხულობ
+			
+			
 			
 			// ვინაიდან hello - შედგება 5 სიმბოლოსგან, 3 ბიტს ავიღებ 1ხელ და შემდეგ 2 ბიტს გადავაწერ Hello მასივს და ისე წავიკითხავ.
 			for(int i = 0; i < hello.length - 1; i++) {
 				reversed.write(hello[i]);
 			}
+			
+			// ზემოთ დაწერილი მაქვს დეტალური აღწერა, დიდი ტექსტის შემთხვევაში ჩავწერდი while loopit --> while (-1 != (byteVal = inp.read()))
+			// -1 ნიშნავს, რომ ფაილის ბოლო წევრზე ვდგავართ და იმის იქით არაფერი წერია, ამიტომ აბრუნებს -1;
+			//inp.read(hello, 0, 3); // ვკითხულობ 3-3 ბიტით;
+			
+			/*for(int i = 0; i < hello.length; i++) {
+				reversed.write(hello[i]);
+			} გავიმეორებდი იგივე კოდს. */
 		
 			
 			reversed.close();
