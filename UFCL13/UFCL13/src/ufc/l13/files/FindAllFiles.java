@@ -5,7 +5,7 @@ import java.io.IOException;
 public class FindAllFiles {
     public static void main(String[] args) throws IOException {
     	// მოცემული კოდი ბეჭდავს მითითებული დირექტორიის ყველა ფოლდერისა თუ ფაილის დასახელებას და მისამართს. ასევე ამოწმებს საწყისი დირექტორიის რეალურობას და არ არსებობის შემთხვევაში გამოაქვს შესაბამისი შეტყობინება.
-        File currentDir = new File("C:\\Program Files");
+        File currentDir = new File("args[0]");
         if(currentDir.isDirectory()) {
         System.out.println("Tavdapirveli misamarti: " + currentDir.getAbsolutePath());
         String[] files = currentDir.list();
@@ -17,6 +17,7 @@ public class FindAllFiles {
             System.out.print(" - ");
             if (dirItem.isDirectory()) {
                 System.out.println(" | direqtoria");
+                
             }
             if (dirItem.isFile()) {
                 System.out.println(" | faili");                
