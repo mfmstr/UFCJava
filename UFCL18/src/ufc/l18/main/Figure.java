@@ -9,7 +9,7 @@ public abstract class Figure implements Comparable<Figure>{
 	}
 	
 	public boolean equals(Object obj) {
-		Circle a = (Circle) obj;
+		Figure a = (Figure) obj;
 		return this.getLength() == a.getLength();
 	}
 
