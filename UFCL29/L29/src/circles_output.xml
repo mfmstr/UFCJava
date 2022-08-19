@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<circles>
+  <circle>
+    <radius>10.0</radius>
+  </circle>
+  <circle>
+    <radius>10.0</radius>
+  </circle>
+  <circle>
+    <radius>2.3</radius>
+  </circle>
+  <circle>
+    <radius>5.0</radius>
+  </circle>
+  <circle>
+    <radius>1.2</radius>
+  </circle>
+  <circle>
+    <radius>3.4</radius>
+  </circle>
+  <circle>
+    <radius>2.3</radius>
+  </circle>
+</circles>

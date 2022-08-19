@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rectangles>
+  <rectangle>
+    <width>4.0</width>
+    <height>5.0</height>
+  </rectangle>
+  <rectangle>
+    <width>10.0</width>
+    <height>11.0</height>
+  </rectangle>
+  <rectangle>
+    <width>1.0</width>
+    <height>1.0</height>
+  </rectangle>
+  <rectangle>
+    <width>1.0</width>
+    <height>1.0</height>
+  </rectangle>
+  <rectangle>
+    <width>0.4</width>
+    <height>0.3</height>
+  </rectangle>
+</rectangles>
