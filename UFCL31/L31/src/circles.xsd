@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="circles" type="circles"/>
+
+  <xs:complexType name="circles">
+    <xs:sequence>
+      <xs:element name="circle" type="circle" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="circle">
+    <xs:sequence/>
+    <xs:attribute name="radius" type="xs:double"/>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="triangles" type="triangles"/>
+
+  <xs:complexType name="triangles">
+    <xs:sequence>
+      <xs:element name="triangle" type="triangle" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="triangle">
+    <xs:sequence>
+      <xs:element name="a" type="xs:double"/>
+      <xs:element name="b" type="xs:double"/>
+      <xs:element name="c" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
