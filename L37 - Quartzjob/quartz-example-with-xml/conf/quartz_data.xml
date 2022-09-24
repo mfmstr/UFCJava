@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<job-scheduling-data xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_1_8.xsd" version="1.8">
+    <schedule>
+        <job>
+            <name>JobCircle</name>
+            <group>group3</group>
+            <job-class>ge.ufc.jobs.JobCircle</job-class>
+        </job>
+        <job>
+            <name>JobRect</name>
+            <group>group2</group>
+            <job-class>ge.ufc.jobs.JobRect</job-class>
+        </job>
+        <job>
+            <name>JobTr</name>
+            <group>group1</group>
+            <job-class>ge.ufc.jobs.JobTr</job-class>
+        </job>
+        <trigger>
+            <cron>
+                <name>cTrigger</name>
+                <group>group3</group>
+                <job-name>JobCircle</job-name>
+                <job-group>group3</job-group>
+                <cron-expression>0 0/1 15-15:59 * * ?</cron-expression>
+            </cron>
+        </trigger>
+        <trigger>
+            <cron>
+                <name>rTrigger</name>
+                <group>group2</group>
+                <job-name>JobRect</job-name>
+                <job-group>group2</job-group>
+                <cron-expression>0 0/2 15-15:58 * * ?0 0/1 15-15:59 * * ?</cron-expression>
+            </cron>
+        </trigger>
+        <trigger>
+            <cron>
+                <name>tTrigger</name>
+                <group>group3</group>
+                <job-name>JobTr</job-name>
+                <job-group>group1</job-group>
+                <cron-expression>0 0/3 15-15:57 * * ?</cron-expression>
+            </cron>
+        </trigger>
+    </schedule>
+</job-scheduling-data>
