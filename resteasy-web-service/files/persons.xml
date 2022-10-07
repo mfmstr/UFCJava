@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person id="1">
+        <name>Giorgi</name>
+        <lastName>Kharebava</lastName>
+        <age>25</age>
+    </person>
+    <person id="2">
+        <name>Cotne</name>
+        <lastName>Aburjania</lastName>
+        <age>25</age>
+    </person>
+    <person id="3">
+        <name>Levan</name>
+        <lastName>Nacvlishvili</lastName>
+        <age>25</age>
+    </person>
+    <person id="4">
+        <name>Saba</name>
+        <lastName>Artkmeladze</lastName>
+        <age>25</age>
+    </person>
+    <person id="5">
+        <name>Gio</name>
+        <lastName>Katsadze</lastName>
+        <age>25</age>
+    </person>
+    <person id="6">
+        <name>Kotiko</name>
+        <lastName>Cxadadze</lastName>
+        <age>25</age>
+    </person>
+</persons>
